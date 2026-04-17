@@ -380,9 +380,7 @@ class MieleCryptoProvider:
             resourcePath=f"Devices/{deviceRoute}/DOP2/{unit}/{attribute}?idx1={idx1}&idx2={idx2}",
             payload=payload,
         )
-        logger.debug(f"Sent PUT request to write {unit}/{attribute}, {
-                len(payload)
-            } bytes payload sent, got response {response}")
+        logger.debug(f"Sent PUT request to write {unit}/{attribute}, {len(payload)} bytes payload sent, got response {response}")
         return response
 
     def readDop2Leaf(self, host, node, deviceRoute, leaf, idx1=0, idx2=0):
