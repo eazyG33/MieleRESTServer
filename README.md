@@ -82,7 +82,7 @@ Generate device keys using the provided "generate-keys.py" script.
 ```
 virtualenv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 ../generate-keys.py > ./keys.json
 ```
 
